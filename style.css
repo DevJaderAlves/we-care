@@ -1,0 +1,152 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px 40px;
+    gap: 15px;
+}
+.link-header{
+    font-weight: 600; 
+    font-size: 24px;
+    color: #989d9c;
+    cursor: pointer;
+    text-decoration: none; 
+}
+.link-header:hover{
+    color: #b1b1b1;
+}
+.button-header{
+    background-color: #665AE1;
+    border-radius: 25px;
+    padding: 5px 15px;
+    width: 130px;
+    border: none;
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+.button-header:hover{
+    background-color: #958cfa;
+}
+.container-principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+}
+.logo-image{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-right: 90px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+}
+h1{
+    font-weight: 900;
+    font-size: 80px;
+    color: #515151;
+}
+h2{
+    font-size: 48px;
+    font-weight: 500px;
+    color: #515151;
+}
+p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #848484;
+    width: 100%;
+    max-width: 515px;
+    margin: 32px 0;
+}
+.botton-main{
+    background-color: #ADFF00;
+    border-radius: 30px;
+    width: 239px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #000;
+}
+
+@media screen and (max-width: 1175px){
+    header{
+        justify-content: center;
+        padding: 20px 10px;
+        gap: 10px;
+    }
+    h1{
+        font-size: 42px;
+    }
+
+    h2{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .botton-main{
+        width: 200px;
+        height: 54px;
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 844px){
+    .container-principal{
+        flex-direction: column;
+    }
+    .logo-image{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    }
+    section{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 638px){
+    header{
+        display: none;
+    }
+        p{
+        display: none;
+    }
+    .logo-image{
+        margin-top: 100px;
+    }
+    section{
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
